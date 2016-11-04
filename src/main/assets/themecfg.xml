@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<theme>
+    <version>pointOne</version>
+    <themeName>Cerebro Dashboard</themeName>
+    <themeInfo>Cerebro is just simple and beautiful. Icons made just from my whims. This is in beta. </themeInfo>
+    <preview img1="preview1"/>
+    <preview img2="preview2"/>
+</theme>

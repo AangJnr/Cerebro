@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <!--
+    Do you want the icons in toolbar to be randomized?
+    True, means yes.
+    False, means no.
+    -->
+    <bool name="shuffle_toolbar_icons">true</bool>
+
+    <!--
+       Do you want the app to use palette api in toolbar header?
+       True, means yes.
+       False, means no.
+       -->
+    <bool name="use_palette_api_in_toolbar">true</bool>
+
+    <!--
+    Do you want to hide "Icon Pack in numbers" section?
+    True, means yes.
+    False, means no.
+    -->
+    <bool name="hide_pack_info">false</bool>
+
+    <!--
+    How many icons does your app include?
+    -->
+    <integer name="icons_amount">300</integer>
+
+    <!--
+    How many wallpapers does your app include?
+    -->
+    <integer name="walls_amount">20</integer>
+
+    <!--
+    How many Zooper widget does your app include?
+    (Don't worry, it will be ignored if your app doesn't include Zooper).
+    -->
+    <integer name="zooper_widgets">0</integer>
+
+
+    <string-array name="apps_titles">
+        <item>Midnight Blue</item>
+    </string-array>
+
+    <string-array name="apps_descriptions">
+        <item>CM12.1 and CM13 Theme.</item>
+    </string-array>
+
+    <string-array name="apps_icons">
+        <item>ic_midnightblue</item>
+    </string-array>
+
+    <string-array name="apps_packages">
+        <item>aang.midnight.blue</item>
+    </string-array>
+
+</resources>

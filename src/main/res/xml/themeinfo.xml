@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is for Atom Launcher -->
+<themeInfo>
+    <packageName>com.ind.aang.cerebro</packageName>
+    <versionName>pointOne</versionName>
+    <versionCode>1</versionCode>
+    <themeName>Cerebro IconPack Dashboard</themeName>
+    <!-- Default Component Color -->
+    <themePointColor>#4db6ac</themePointColor>
+    <themePreview img1="preview1"/>
+    <preview img1="preview1"/>
+</themeInfo>

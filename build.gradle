@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "ind.aang.iconpack.cerebro"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 10
+        versionName "pointOne"
+        generatedDensities = []
+    }
+
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res/drawable',
+                    'src/main/res/drawable/designer',
+                    'src/main/res/drawable/icon_pack',
+                    'src/main/res/drawable/launchers_icons',
+                    'src/main/res/drawable/widgets',
+                    'src/main/res/values/',
+                    'src/main/res/values/icon_pack',
+                    'src/main/res/values/configuration'
+            ]
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        aaptOptions {
+            noCompress 'zip', 'komp', 'klwp', 'kwgt', 'klck', 'kwch'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Main library
+    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.5@aar'
+
+    //Android support libraries needed to build the sample
+    compile 'com.android.support:appcompat-v7:23.4.0@aar'
+    compile 'com.android.support:support-v4:23.4.0@aar'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0@aar'
+    compile 'com.android.support:recyclerview-v7:23.4.0@aar'
+    compile 'com.android.support:palette-v7:23.4.0@aar'
+    compile 'com.android.support:gridlayout-v7:23.4.0'
+    compile 'com.android.support:customtabs:23.4.0'
+
+    //Material Dialogs
+    compile('com.afollestad.material-dialogs:core:0.8.5.8@aar') {
+        transitive = true
+    }
+
+    //Material Drawer
+    compile('com.mikepenz:materialdrawer:5.2.6@aar') {
+        transitive = true
+    }
+
+    //Material icons fonts
+    compile 'com.mikepenz:google-material-typeface:2.2.0.1@aar'
+
+    //OkHttp
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+
+    //Glide Library - Image Loading Lib
+    compile 'com.github.bumptech.glide:glide:3.8.0-SNAPSHOT'
+
+    //Sectioned RecyclerView
+    compile('com.afollestad:sectioned-recyclerview:0.2.2') {
+        transitive = true
+    }
+
+    //Muzei API
+    //noinspection GradleDynamicVersion
+    compile 'com.google.android.apps.muzei:muzei-api:2.+'
+
+    //Circular Image View
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+
+    //RecyclerView Fast Scroller
+    compile 'com.github.pluscubed:recycler-fast-scroll:0.3.1@aar'
+
+    //Donations Lib
+    compile 'org.sufficientlysecure:donations:2.4'
+
+    //Required for better Zooper setup
+    compile 'io.reactivex:rxandroid:1.1.0'
+
+    //Required for Kustom support.
+    //noinspection GradleDynamicVersion
+    compile 'org.bitbucket.frankmonza:kustomapi:+'
+
+}
